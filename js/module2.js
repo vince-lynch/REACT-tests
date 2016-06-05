@@ -1,2 +1,149 @@
-// Module #2
-console.log("module2 stuff");
+
+var _ = require("lodash");
+var people = [{
+  "id": 1,
+  "gender": "Male",
+  "first_name": "Eric",
+  "last_name": "Hill",
+  "email": "ehill0@webmd.com",
+  "ip_address": "17.192.249.179"
+}, {
+  "id": 2,
+  "gender": "Female",
+  "first_name": "Bonnie",
+  "last_name": "Lewis",
+  "email": "blewis1@pbs.org",
+  "ip_address": "87.32.27.4"
+}, {
+  "id": 3,
+  "gender": "Male",
+  "first_name": "James",
+  "last_name": "Watkins",
+  "email": "jwatkins2@ucoz.com",
+  "ip_address": "237.255.234.44"
+}, {
+  "id": 4,
+  "gender": "Male",
+  "first_name": "Jesse",
+  "last_name": "Franklin",
+  "email": "jfranklin3@dyndns.org",
+  "ip_address": "99.123.82.33"
+}, {
+  "id": 5,
+  "gender": "Female",
+  "first_name": "Sharon",
+  "last_name": "Frazier",
+  "email": "sfrazier4@newsvine.com",
+  "ip_address": "180.87.162.223"
+}, {
+  "id": 6,
+  "gender": "Male",
+  "first_name": "Robert",
+  "last_name": "Watson",
+  "email": "rwatson5@edublogs.org",
+  "ip_address": "150.91.63.122"
+}, {
+  "id": 7,
+  "gender": "Male",
+  "first_name": "Brian",
+  "last_name": "Lopez",
+  "email": "blopez6@aol.com",
+  "ip_address": "74.210.4.232"
+}, {
+  "id": 8,
+  "gender": "Female",
+  "first_name": "Helen",
+  "last_name": "Webb",
+  "email": "hwebb7@fastcompany.com",
+  "ip_address": "211.63.61.13"
+}, {
+  "id": 9,
+  "gender": "Female",
+  "first_name": "Katherine",
+  "last_name": "Fields",
+  "email": "kfields8@yandex.ru",
+  "ip_address": "232.8.125.113"
+}, {
+  "id": 10,
+  "gender": "Male",
+  "first_name": "Jose",
+  "last_name": "Wells",
+  "email": "jwells9@patch.com",
+  "ip_address": "148.224.41.179"
+}, {
+  "id": 11,
+  "gender": "Male",
+  "first_name": "John",
+  "last_name": "Martin",
+  "email": "jmartina@yale.edu",
+  "ip_address": "203.165.254.199"
+}, {
+  "id": 12,
+  "gender": "Female",
+  "first_name": "Paula",
+  "last_name": "Washington",
+  "email": "pwashingtonb@soundcloud.com",
+  "ip_address": "186.5.199.30"
+}, {
+  "id": 13,
+  "gender": "Male",
+  "first_name": "Jesse",
+  "last_name": "Ward",
+  "email": "jwardc@mediafire.com",
+  "ip_address": "103.89.229.148"
+}, {
+  "id": 14,
+  "gender": "Male",
+  "first_name": "Sean",
+  "last_name": "Martin",
+  "email": "smartind@hud.gov",
+  "ip_address": "105.197.172.184"
+}, {
+  "id": 15,
+  "gender": "Female",
+  "first_name": "Sharon",
+  "last_name": "Sullivan",
+  "email": "ssullivane@list-manage.com",
+  "ip_address": "44.105.170.62"
+}, {
+  "id": 16,
+  "gender": "Female",
+  "first_name": "Theresa",
+  "last_name": "Edwards",
+  "email": "tedwardsf@domainmarket.com",
+  "ip_address": "246.139.64.236"
+}, {
+  "id": 17,
+  "gender": "Male",
+  "first_name": "Stephen",
+  "last_name": "Franklin",
+  "email": "sfrankling@infoseek.co.jp",
+  "ip_address": "20.220.114.216"
+}, {
+  "id": 18,
+  "gender": "Female",
+  "first_name": "Susan",
+  "last_name": "Moore",
+  "email": "smooreh@hexun.com",
+  "ip_address": "138.190.31.190"
+}, {
+  "id": 19,
+  "gender": "Male",
+  "first_name": "Daniel",
+  "last_name": "Meyer",
+  "email": "dmeyeri@aboutads.info",
+  "ip_address": "66.164.141.128"
+}, {
+  "id": 20,
+  "gender": "Male",
+  "first_name": "Jeremy",
+  "last_name": "Spencer",
+  "email": "jspencerj@booking.com",
+  "ip_address": "253.64.255.136"
+}];
+
+var femaleCount = _.filter(people, {gender: "Female"}).length;
+
+alert(femaleCount + " Females");
+
+
