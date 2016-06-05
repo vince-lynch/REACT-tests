@@ -30,6 +30,8 @@
     "lodash": "^4.13.1",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
+    "history": "^1.17.0",
+    "react-router": "^2.4.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }
